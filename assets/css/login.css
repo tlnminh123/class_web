@@ -1,0 +1,330 @@
+/* Reset và base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', SegoeUI, 'Microsoft Sans Serif', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0078d4 0%, #106ebe 100%);
+    color: #323130;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(10px, 3vw, 30px);
+    
+    /* Font size responsive */
+    font-size: clamp(14px, 3.5vw, 16px);
+}
+
+/* Login container */
+.login-container {
+    width: 100%;
+    max-width: clamp(300px, 90vw, 450px);
+    background: white;
+    border-radius: clamp(8px, 2vw, 12px);
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.1),
+        0 8px 24px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Login header - FIXED LOGO STYLES */
+.login-header {
+    background: linear-gradient(135deg, #0078d4 0%, #106ebe 100%);
+    padding: clamp(15px, 4vw, 25px);
+    text-align: center;
+    color: white;
+}
+
+/* Logo styles - FIXED */
+.logo {
+    width: clamp(60px, 15vw, 80px); /* Responsive width */
+    height: clamp(60px, 15vw, 80px); /* Responsive height */
+    object-fit: contain; /* Giữ tỷ lệ ảnh */
+    margin: 0 auto clamp(10px, 3vw, 15px); /* Căn giữa và margin dưới */
+    display: block;
+    border-radius: 8px; /* Bo góc nhẹ nếu cần */
+    background: rgba(255, 255, 255, 0.1); /* Nền trong suốt cho logo */
+    padding: 5px; /* Khoảng cách đệm */
+}
+
+.login-header h1 {
+    font-size: clamp(20px, 5vw, 28px);
+    font-weight: 600;
+    margin-bottom: clamp(5px, 2vw, 8px);
+}
+
+.login-subtitle {
+    font-size: clamp(14px, 3vw, 16px);
+    opacity: 0.9;
+}
+
+/* Login form */
+.login-form {
+    padding: clamp(20px, 6vw, 35px);
+}
+
+.error-message {
+    background: #fde7e9;
+    color: #d13438;
+    padding: clamp(10px, 3vw, 14px);
+    border-radius: clamp(4px, 1vw, 6px);
+    margin-bottom: clamp(15px, 4vw, 20px);
+    border: 1px solid #d13438;
+    display: flex;
+    align-items: center;
+    gap: clamp(8px, 2vw, 12px);
+    font-size: clamp(14px, 3vw, 15px);
+}
+
+.error-icon {
+    font-size: clamp(16px, 4vw, 20px);
+    flex-shrink: 0;
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: clamp(15px, 4vw, 20px);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: clamp(6px, 2vw, 8px);
+    font-weight: 500;
+    color: #323130;
+    font-size: clamp(14px, 3vw, 15px);
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    padding: clamp(12px, 3.5vw, 16px) clamp(12px, 3vw, 16px);
+    border: 2px solid #edebe9;
+    border-radius: clamp(4px, 1vw, 6px);
+    font-size: clamp(14px, 3.5vw, 16px);
+    transition: all 0.3s ease;
+    background: white;
+    min-height: clamp(44px, 10vw, 52px);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #0078d4;
+    box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.2);
+}
+
+.form-input::placeholder {
+    color: #8a8886;
+}
+
+/* Password toggle */
+.password-toggle {
+    position: absolute;
+    right: clamp(12px, 3vw, 16px);
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #605e5c;
+    cursor: pointer;
+    padding: 4px;
+    font-size: clamp(14px, 3vw, 16px);
+    transition: color 0.2s;
+}
+
+.password-toggle:hover {
+    color: #0078d4;
+}
+
+/* Submit button */
+.submit-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #0078d4 0%, #106ebe 100%);
+    color: white;
+    border: none;
+    border-radius: clamp(4px, 1vw, 6px);
+    padding: clamp(12px, 3.5vw, 16px);
+    font-size: clamp(15px, 3.5vw, 17px);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: clamp(48px, 11vw, 56px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(8px, 2vw, 12px);
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #106ebe 0%, #005a9e 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 120, 212, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.submit-btn:disabled {
+    background: #a19f9d;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.submit-icon {
+    font-size: clamp(16px, 4vw, 18px);
+}
+
+/* Login footer */
+.login-footer {
+    text-align: center;
+    padding: clamp(15px, 4vw, 20px);
+    border-top: 1px solid #edebe9;
+    margin-top: clamp(15px, 4vw, 20px);
+}
+
+.home-link {
+    color: #0078d4;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: clamp(14px, 3vw, 15px);
+    display: inline-flex;
+    align-items: center;
+    gap: clamp(6px, 2vw, 8px);
+    padding: clamp(8px, 2vw, 10px);
+    border-radius: clamp(4px, 1vw, 6px);
+    transition: all 0.2s;
+}
+
+.home-link:hover {
+    background: #f3f2f1;
+    text-decoration: underline;
+}
+
+.home-icon {
+    font-size: clamp(14px, 3vw, 16px);
+}
+
+/* Loading state */
+.loading {
+    position: relative;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: "";
+    position: absolute;
+    width: clamp(16px, 4vw, 20px);
+    height: clamp(16px, 4vw, 20px);
+    border: 2px solid transparent;
+    border-top: 2px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    body {
+        padding: 15px 10px;
+        background: #0078d4;
+    }
+    
+    .login-container {
+        max-width: 100%;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .login-form {
+        padding: 25px 20px;
+    }
+    
+    .form-input {
+        padding: 14px 12px;
+    }
+    
+    .submit-btn {
+        padding: 14px;
+    }
+    
+    /* Mobile logo adjustment */
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    
+    .login-container {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        padding: 30px;
+    }
+    
+    .login-container {
+        max-width: 450px;
+    }
+    
+    .login-container:hover {
+        transform: translateY(-2px);
+        box-shadow: 
+            0 8px 16px rgba(0, 0, 0, 0.15),
+            0 16px 32px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+    }
+}
+
+/* Fallback cho logo nếu ảnh không load được */
+.logo {
+    /* Thêm fallback text cho accessibility */
+    font-size: 0; /* Ẩn text thay thế */
+}
+
+.logo:before {
+    content: "Tổ 3";
+    font-size: 16px;
+    color: white;
+    display: none; /* Chỉ hiện khi ảnh lỗi */
+}
+
+/* Đảm bảo logo không bị méo trên các trình duyệt khác nhau */
+.logo {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<users>
+  <user>
+    <stt>1</stt>
+    <username>admin</username>
+    <name>Admin</name>
+    <date_of_birth>1999-01-01</date_of_birth>
+    <email>admin@whc.com</email>
+  </user>
+  <user>
+    <stt>2</stt>
+    <username>bot</username>
+    <name>bot</name>
+    <date_of_birth>2000-01-01</date_of_birth>
+    <email>ads99183@nezid.com</email>
+  </user>
+  <user>
+    <stt>3</stt>
+    <username>user1</username>
+    <name>no</name>
+    <date_of_birth>no</date_of_birth>
+    <email>no</email>
+  </user>
+  <user>
+    <stt>4</stt>
+    <username>minh</username>
+    <name>Ngoc Minh</name>
+    <date_of_birth>2010-08-03</date_of_birth>
+    <email>tranlengocminh21@gmail.com</email>
+  </user>
+<user><username>phuong_thao</username><name>Tr&#xE2;n Ph&#x1B0;&#x1A1;ng Th&#x1EA3;o</name><date_of_birth>2025-05-16</date_of_birth><email>tranthuhuyen04081986@gmail.com</email></user><user><username>quang_hung</username><name>Nguy&#x1EC5;n Quang H&#x1B0;ng</name><date_of_birth>2010-08-06</date_of_birth><email>hungnguyen682010@gmail.com</email></user><user><username>huong_tra</username><name>Tr&#x1EA7;n H&#x1B0;&#x1A1;ng Tr&#xE0;</name><date_of_birth>2010-04-07</date_of_birth><email>huongtra472010@gmail.com</email></user><user><username>truong_thao</username><name>Tr&#x1EA7;n Vi&#x1EBF;t Tr&#x1B0;&#x1EDD;ng Thao</name><date_of_birth>2010-03-22</date_of_birth><email>tranviett2000@gmail.com</email></user><user><username>nhat_duong</username><name>Tr&#x1EA7;n Nh&#x1EAD;t D&#x1B0;&#x1A1;ng</name><date_of_birth>2010-07-27</date_of_birth><email>trannhatduong6a1ht@gmail.com</email></user><user><username>khanh_ha</username><name>Tr&#x1EA7;n Kh&#xE1;nh H&#xE0;</name><date_of_birth>2010-04-21</date_of_birth><email>haxinhdep333@gmail.com</email></user><user><username>ngoc_son</username><name>Ng&#xF4; D&#x1B0;&#x1A1;ng Ng&#x1ECD;c S&#x1A1;n</name><date_of_birth>2010-02-04</date_of_birth><email>bacnam354@gmai.com</email></user><user><username>minh_phu</username><name>Ph&#x1EA1;m Minh Ph&#xFA;</name><date_of_birth>2010-11-22</date_of_birth><email>phamminhngan19@gmail.com</email></user></users>
